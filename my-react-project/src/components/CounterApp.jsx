@@ -5,19 +5,17 @@ const CounterApp = () => {
     const [count, setCount] = useState(0)
 
     const increaseCount = () => {
-        let newCount = count + 1 
-        setCount(newCount)
+        setCount(count + 1); 
     }
 
     const decreaseCount = () => {
         if (count != 0){
-            let newCount = count - 1
-            setCount(newCount)
-        }
+            setCount(count - 1);  
+        }; 
     }
 
     const resetCount = () => {
-        setCount(0)
+        setCount(0); 
     }
 
   return (
