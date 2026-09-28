@@ -21,8 +21,8 @@ function App() {
       <h1>Learn React</h1>
       <HelloWorld />
       <LearnReact/> */}
-      <LearnEvent />
-      <LearnLiftingSatateUp fun = {getStock}/>  
+      {/* <LearnEvent />
+      <LearnLiftingSatateUp fun = {getStock}/>   */}
       <LearnUseState />
 
       
