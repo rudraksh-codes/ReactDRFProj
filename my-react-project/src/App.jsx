@@ -6,6 +6,7 @@ import LearnEvent from './components/LearnEvent.jsx'
 import LearnLiftingSatateUp from './components/LearnLiftingSatateUp.jsx'
 import LearnUseState from './components/LearnUseState.jsx'
 import CounterApp from './components/CounterApp.jsx'
+import LearnUseEffect from './components/LearnUseEffect.jsx'
 
 
 
@@ -27,7 +28,8 @@ function App() {
       {/* <LearnEvent />
       <LearnLiftingSatateUp fun = {getStock}/>   */}
       {/* <LearnUseState /> */}
-      <CounterApp />
+      {/* <CounterApp /> */}
+      <LearnUseEffect/>
       
     </>
   )
