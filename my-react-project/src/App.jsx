@@ -5,6 +5,9 @@ import LearnProps from './components/LearnProps.jsx'
 import LearnEvent from './components/LearnEvent.jsx'
 import LearnLiftingSatateUp from './components/LearnLiftingSatateUp.jsx'
 import LearnUseState from './components/LearnUseState.jsx'
+import CounterApp from './components/CounterApp.jsx'
+
+
 
 function App() {
   let price = 200
@@ -15,7 +18,7 @@ function App() {
 
   return (
     <>
-      <h1>App Component</h1>
+      {/* <h1>App Component</h1> */}
       {/* <LearnProps stock="this is a test prop data " price={price}/> */}
       {/* <LearnJSX/>
       <h1>Learn React</h1>
@@ -23,8 +26,8 @@ function App() {
       <LearnReact/> */}
       {/* <LearnEvent />
       <LearnLiftingSatateUp fun = {getStock}/>   */}
-      <LearnUseState />
-
+      {/* <LearnUseState /> */}
+      <CounterApp />
       
     </>
   )
