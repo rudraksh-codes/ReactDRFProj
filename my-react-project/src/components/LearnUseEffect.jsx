@@ -32,7 +32,13 @@ const LearnUseEffect = () => {
     useEffect(()=> {
         //the logic goes here 
         console.log('use effect is called  ')
-    }, [])
+        
+        // cleanup function
+        return () => {
+            console.log("cleanup function is called")
+        }
+    }, [randomNum])
+
 
   return (
     <>
