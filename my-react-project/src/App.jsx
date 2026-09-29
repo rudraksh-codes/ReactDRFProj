@@ -8,6 +8,7 @@ import LearnUseState from './components/LearnUseState.jsx'
 import CounterApp from './components/CounterApp.jsx'
 import LearnUseEffect from './components/LearnUseEffect.jsx'
 import LearnUseMemo from './components/LearnUseMemo.jsx'
+import ChildA from './components/ChildA.jsx'
 
 
 
@@ -31,7 +32,8 @@ function App() {
       {/* <LearnUseState /> */}
       {/* <CounterApp /> */}
       {/* <LearnUseEffect/> */}
-      <LearnUseMemo/>
+      {/* <LearnUseMemo/> */}
+      <ChildA data='bruhhh'/>
       
     </>
   )
