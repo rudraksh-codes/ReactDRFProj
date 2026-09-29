@@ -1,14 +1,21 @@
-import React from 'react'
-import { StockContext, UserContext } from '../App'
+import {useContext} from 'react'
+import { StockContext, UserContext} from '../App'
 
 
 const ChildC = () => {
+    const stockData = useContext(StockContext)
+    const userData = useContext(UserContext)
+
   return (
     <>
-        <StockContext.Consumer>
-            {/* function with a single argument only */}
+
+        <h2>ChildC-- {stockData.stock}:{stockData.price}</h2>
+        <h1>ChildC-- {userData.user.name}, LoggedIn?:{userData.user.isLoggedIn}</h1>
+
+
+        {/* <StockContext.Consumer>
             {
-                ({stock, price})=> {    //{/*destructuring */}
+                ({stock, price})=> {    //destructuring 
                     return (
                         <UserContext.Consumer>
                             {
@@ -27,7 +34,7 @@ const ChildC = () => {
                 ); 
                 }
             }
-        </StockContext.Consumer>
+        </StockContext.Consumer> */}
     </> 
   )
 }
