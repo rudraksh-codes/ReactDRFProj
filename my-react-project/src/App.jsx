@@ -9,11 +9,16 @@ import CounterApp from './components/CounterApp.jsx'
 import LearnUseEffect from './components/LearnUseEffect.jsx'
 import LearnUseMemo from './components/LearnUseMemo.jsx'
 import ChildA from './components/ChildA.jsx'
+import { createContext, useState } from 'react'
 
-
+// step 1 (create context - outside the component)
+const StockContext = createContext()
+const UserContext = createContext()
 
 function App() {
   let price = 200
+  const stock = "Tesla";
+  const [user, setUser] = useState({name:"Rudra", isLoggedIn: 'Yes'})
 
   const getStock = (param)=>{
     console.log(`this data is coming from the child to parent component App : ${param}`)
@@ -33,11 +38,19 @@ function App() {
       {/* <CounterApp /> */}
       {/* <LearnUseEffect/> */}
       {/* <LearnUseMemo/> */}
-      <ChildA data='bruhhh'/>
+      
+      
+      {/* // step 2 */}
+      <StockContext.Provider value = {{stock, price}}>
+        <UserContext.Provider value = {{user, setUser}}>
+          <ChildA />
+        </UserContext.Provider>
+      </StockContext.Provider>
       
     </>
   )
 }
 
 export default App
+export {StockContext, UserContext}
    

@@ -1,10 +1,11 @@
 import React from 'react'
 import ChildC from './ChildC'
 
-const ChildB = (props) => {
+const ChildB = () => {
   return (
     <>
-        <ChildC data_dash_dash = {props.data_dash} />
+        <div>ChildB</div>
+        <ChildC  />
     </>
   )
 }
