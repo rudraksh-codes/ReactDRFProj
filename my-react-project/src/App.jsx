@@ -10,6 +10,7 @@ import LearnUseEffect from './components/LearnUseEffect.jsx'
 import LearnUseMemo from './components/LearnUseMemo.jsx'
 import ChildA from './components/ChildA.jsx'
 import { createContext, useState } from 'react'
+import LearnUseRef from './components/LearnUseRef.jsx'
 
 // step 1 (create context - outside the component)
 const StockContext = createContext()
@@ -41,11 +42,13 @@ function App() {
       
       
       {/* // step 2 */}
-      <StockContext.Provider value = {{stock, price}}>
+      {/* <StockContext.Provider value = {{stock, price}}>
         <UserContext.Provider value = {{user, setUser}}>
           <ChildA />
         </UserContext.Provider>
-      </StockContext.Provider>
+      </StockContext.Provider> */}
+
+      <LearnUseRef/>
       
     </>
   )
