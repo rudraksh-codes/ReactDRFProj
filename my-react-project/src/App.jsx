@@ -12,6 +12,8 @@ import ChildA from './components/ChildA.jsx'
 import { createContext, useState } from 'react'
 import LearnUseRef from './components/LearnUseRef.jsx'
 import LearnCustomHooks from './components/LearnCustomHooks.jsx'
+import LearnConditionalRendering from './components/LearnConditionalRendering.jsx'
+import LearnMap from './components/LearnMap.jsx'
 
 // step 1 (create context - outside the component)
 const StockContext = createContext()
@@ -49,7 +51,9 @@ function App() {
         </UserContext.Provider>
       </StockContext.Provider> */}
       {/* <LearnUseRef/> */}
-      <LearnCustomHooks/>
+      {/* <LearnCustomHooks/> */}
+      {/* <LearnConditionalRendering/> */}
+      <LearnMap/>
 
       
     </>
