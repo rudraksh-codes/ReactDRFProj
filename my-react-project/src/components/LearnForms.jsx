@@ -20,16 +20,22 @@ const LearnForms = () => {
         setFormData({
             ...formData, [e.target.name] : e.target.value
         })
-      
+    }
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault()
+        console.log("form submitted", formData)
     }
 
   return (
     <>
         <h2>Forms</h2> 
-        <form action="">
+        <form action="" onSubmit={handleFormSubmit}>
             First Name : <input type="text" name='firstName' value={formData.firstName} onChange={handleFormInput}/>
             <br />
             Last Name : <input type="text" name="lastName" value={formData.lastName} onChange={handleFormInput}/> 
+            <br />
+            <input type="submit" value="Submit" />
         </form>
     </>
   )
